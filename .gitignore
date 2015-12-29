@@ -8,7 +8,7 @@
 # Cordova folders
 node_modules/
 platforms/
-plugins/
+#plugins/
 
 # when use sass, do not commit css files
 /www/css/
