@@ -13,20 +13,20 @@
     })
     .state('login', {
       url: '/login',
-      templateUrl: 'app/authentication/login.html',
+      templateUrl: 'authentication/login.html',
       controller: 'LoginCtrl'
     })
     .state('app', {
       url: '/app',
       abstract: true,
-      templateUrl: 'app/layout/layout.html',
+      templateUrl: 'layout/layout.html',
       controller: 'LayoutCtrl'
     })
     .state('app.twitts', {
       url: '/twitts',
       views: {
         'menuContent': {
-          templateUrl: 'app/twitts/twitts.html',
+          templateUrl: 'twitts/twitts.html',
           controller: 'TwittsCtrl'
         }
       }
@@ -35,7 +35,7 @@
       url: '/twitts/:id',
       views: {
         'menuContent': {
-          templateUrl: 'app/twitts/twitt.html',
+          templateUrl: 'twitts/twitt.html',
           controller: 'TwittCtrl'
         }
       }
@@ -44,7 +44,7 @@
       url: '/settings',
       views: {
         'menuContent': {
-          templateUrl: 'app/settings/settings.html',
+          templateUrl: 'settings/settings.html',
           controller: 'SettingsCtrl',
           resolve: {
             resolvedSettings: function(Storage){
